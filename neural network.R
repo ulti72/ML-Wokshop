@@ -18,3 +18,4 @@ concrete_model <- neuralnet(strength ~ cement + slag + ash +water +superplastic 
 set.seed(111)
 concrete_model <- neuralnet(strength ~ cement + slag + ash +water +superplastic + coarseagg + age + fineagg , data = concrete_train, hidden=2)
 plot(concrete_model)
+#end
